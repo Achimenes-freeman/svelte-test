@@ -3,7 +3,6 @@
   import Icon from "@iconify/svelte";
   import {posts} from "../../store/store"
   import { goto } from "$app/navigation";
-  import { base } from "$app/paths";
 
   export let postId: number;
   export let isFullPost: boolean
@@ -13,7 +12,7 @@
     window.localStorage.setItem('posts-data', JSON.stringify($posts))
 
     if (isFullPost) {
-      goto(base)
+      goto('/')
     }
   }
 

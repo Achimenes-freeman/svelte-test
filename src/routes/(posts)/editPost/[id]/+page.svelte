@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { base } from "$app/paths";
   import {posts } from '../../../../store/store'
   import {page} from '$app/stores'
   import ControlPostForm from '../../../../components/ControlPostForm/ControlPostForm.svelte';
@@ -36,7 +35,7 @@
       postWasEdit = true
 
       timer = setTimeout(()=> {
-        goto(`${base}/post/${postData?.id}`)
+        goto(`/post/${postData?.id}`)
       }, 3000)
     } else {
       alert('fill in Title blank field to continue')

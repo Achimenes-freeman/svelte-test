@@ -5,7 +5,6 @@
   import { posts } from "../../../store/store";
   import moment from "moment";
   import type { IPost } from "../../../components/PostItem/PostItem";
-  import { base } from "$app/paths";
 
   let postWasCreated = false;
   let timer: ReturnType<typeof setTimeout>
@@ -34,7 +33,7 @@
       postWasCreated = true
 
       timer = setTimeout(()=> {
-        goto(base)
+        goto('/')
       }, 3000)
     } else {
       alert('fill in Title blank field to continue')

@@ -1,12 +1,9 @@
 <script>
-  import { base } from "$app/paths";
-
-
   import Icon from "@iconify/svelte";
 
 </script>
 
-<a class="back-link" href={base}>
+<a class="back-link" href={'/'}>
   <span class="back-link_icon">
     <Icon class="icon" icon="solar:alt-arrow-left-broken" />
   </span>

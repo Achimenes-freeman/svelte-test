@@ -1,6 +1,5 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
-  import { base } from "$app/paths";
 
 
   import Icon from "@iconify/svelte";
@@ -8,7 +7,7 @@
 
 </script>
 
-<button on:click={()=>{goto(`${base}/editPost/${postId}`)}} class="btn-edit">
+<button on:click={()=>{goto(`/editPost/${postId}`)}} class="btn-edit">
   <Icon icon="ph:pen-light" />
 </button>
 

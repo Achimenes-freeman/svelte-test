@@ -3,7 +3,6 @@
 
   import DeletePostButton from "../DeletePostButton/DeletePostButton.svelte"
   import EditPostButton from "../EditPostButton/EditPostButton.svelte";
-  import { base } from "$app/paths";
 
   export let post: IPost
   export let isFullPost: boolean
@@ -17,7 +16,7 @@
       <EditPostButton postId={post.id}/>
       <DeletePostButton postId={post.id} {isFullPost}/>
       {#if !isFullPost}
-        <a href={`${base}/post/${post.id}`} class="post-btn_more">Full post</a>
+        <a href={`/post/${post.id}`} class="post-btn_more">Full post</a>
       {/if}
     </span>
   </div>

@@ -1,9 +1,8 @@
 <script lang="ts">
   import { goto } from '$app/navigation';
-  import { base } from '$app/paths';
 
   function createNewPost(){
-    goto(`${base}/createPost`)
+    goto(`/createPost`)
   }
 </script>
 
